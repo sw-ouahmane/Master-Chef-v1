@@ -1,0 +1,23 @@
+<main>
+  <li>
+    <div class="card mb-3">
+      <img [src]="recette.image" class="card-img-top" alt="..."> <!-- image dans le fichier json -->
+      <div class="card-body">
+          <h5 class="card-title">{{ recette.titre }}</h5> <!-- label dans le fichier json -->
+          <div class="titre-recette"></div>
+
+          <p class="card-text">Auteur : {{ recette.auteur }}</p> <!-- source dans le fichier json -->
+          <div class="auteur-recette"></div>
+
+          <p class="card-text">Nombre de personnes : {{ recette.nbPortions }} </p> <!-- yield dans le fichier json -->
+          <div class="nbPortion-recette"></div>
+
+          <p class="card-text">Calories : {{ recette.calories |  number: '1.0-0' }}</p><!-- calories dans le fichier json -->
+          <div class="calories-recette"></div>
+
+          <!-- Bouton pour accéder à la recette => redirection -->
+          <button type="button" class="btn btn-outline-default" [routerLink]="['/results', nom , recette.id]">Découvrir la recette</button>
+      </div>
+    </div>
+  </li>
+</main>

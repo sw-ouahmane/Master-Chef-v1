@@ -1,0 +1,56 @@
+<main>
+  <section id="reseaux-sociaux">
+    <app-twitter-feed></app-twitter-feed>
+  </section>
+
+  <section id="main-content">
+    <div class="recette-page">
+      <h3 id="titreAccueil">Idée du jour</h3>
+
+      <div class="btnChargement">
+        <button class="bouton btn btn-1 btn-neutral" (click)="onClick()">Découvrir la recette du jour </button>
+      </div>
+      <p id="msgChargement">{{ messageChargement }}</p>
+
+      <div>
+        <div *ngIf="recetteChargee" class="container">
+
+          <h4 class="title">{{ recetteDuJour.titre }}</h4>
+
+          <div class="photo-principale">
+             <img [src]="recetteDuJour.image"  [alt]="description">
+          </div>
+
+          <div class="infos">
+            <div class="infos-content">
+             <span class="heading">{{ recetteDuJour.nbPortions }}</span>
+              <span class="description"> personnes</span>
+            </div>
+            <div class="infos-content">
+             <span class="heading">{{ recetteDuJour.calories | number: '1.0-0' }}</span>
+              <span class="description">Kcal</span>
+            </div >
+          </div>
+
+
+          <!-- Gestion de la liste des ingrédients -->
+          <div class="ingredients">
+            <h2 class="subtitle">Ingrédients :</h2>
+            <div class="ingredients-list">
+                <ul class="list-group">
+                  <li class="list-group-item" *ngFor="let ing of recetteDuJour.listeIngredients">
+                    {{ing}}
+                  </li>
+                </ul>
+
+                 <button type="button" class="bouton btn btn-outline-default" id="btnVoir">
+                  <a [href]="recetteDuJour.url" target="_blank">Voir la recette</a>
+                </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

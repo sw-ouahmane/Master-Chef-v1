@@ -1,0 +1,30 @@
+#btnRecherche{
+    background-color:  #A48A5C;
+    color: white;
+    transition: 0.7s;
+}
+
+#btnRecherche:hover{
+    opacity: 0.8;
+    color: #463F32;
+    background-color:  #aa9879;
+}
+
+#msgErreur{
+    color: white;
+    font-weight: bolder;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:250px){
+   .content{
+       margin-right: 5px;
+       margin-left: 5px;
+   }
+}
