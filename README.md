@@ -33,7 +33,7 @@ Créer une application Web ayant les caractéristiques suivantes :
 
 → Lien vers la [Démonstration vidéo](https://drive.google.com/file/d/1WwSVAbY2005VtUvT3fj0h9Z5PZQSNjcV/view?usp=sharing)
 
-→ Lien vers l'[Application](https://cassandrach.github.io/Cooking-Chief) (pas à jour)
+→ Lien vers l'[Application](https://github.com/sw-ouahmane/Master-Chef-v1) (pas à jour)
 
 
 ## Etapes pour faire fonctionner l'application en local :
