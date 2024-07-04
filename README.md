@@ -9,9 +9,7 @@ Projet dans le cadre des modules d'IHM et d'Architectures logicielles pour le d√
 
 
 ## Membres de l'√©quipe :
-* ALLAIN Yannis
-* CHAUMULON Cassandra
-* DERRIEN Guillaume
+
 
 
 ## Objectifs :
